@@ -1,0 +1,87 @@
+#site-container {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+}
+
+.activity {
+  &__container {
+    text-align: center;
+    top: 50%;
+    transform: translateY(-50%);
+    position: relative;
+  }
+  &__text-wrapper {
+    display: block;
+    position: relative;
+    animation: fromTop .5s 1;
+  }
+  &__title {
+    font-size: 35px;
+    line-height: 1.5em;
+    color: $grey;
+    font-family: $font-stack;
+    font-weight: $medium;
+    text-transform: lowercase;
+  }
+  &__subtitle {
+    font-size: 18px;
+    line-height: 1.5em;
+    margin-bottom: 30px;
+    color: $grey;
+    font-family: $font-stack;
+    font-weight: $regular;
+    text-transform: lowercase;
+  }
+  &__image {
+    animation: fromRight .5s 1;
+    display: block;
+    position: relative;
+  }
+}
+
+.button {
+  display: block;
+}
+
+.evaluate-button {
+  font-size: 0;
+  color: $light-blue;
+  cursor: pointer;
+  // bottom: 50px;
+  // position: absolute;
+  // left: calc(50% - 30px);
+  margin-top: 50px;
+  &:after {
+    content: '';
+    background: url('../img/resources/evaluate-icon.svg') no-repeat;
+    background-size: 60px 60px;
+    width: 60px;
+    height: 60px;
+    margin: 0 auto;
+    display: block;
+    cursor: pointer;
+  }
+}
+
+@keyframes fromRight {
+  from {
+    right: -50%;
+    opacity: .3;
+  }
+  to {
+    right: auto;
+    opacity: 1;
+  }
+}
+
+@keyframes fromTop {
+  from {
+    top: -100px;
+    opacity: .3;
+  }
+  to {
+    top: auto;
+    opacity: 1;
+  }
+}
