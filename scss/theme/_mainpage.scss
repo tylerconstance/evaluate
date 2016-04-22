@@ -14,7 +14,9 @@
   &__text-wrapper {
     display: block;
     position: relative;
-    animation: fromTop .5s 1;
+    &.enter, &.update {
+      animation: fromTop .5s;
+    }
   }
   &__title {
     font-size: 35px;
@@ -34,9 +36,11 @@
     text-transform: lowercase;
   }
   &__image {
-    animation: fromRight .5s 1;
     display: block;
     position: relative;
+    &.enter, &.update {
+      animation: fromRight .5s;
+    }
   }
 }
 
@@ -70,7 +74,7 @@
     opacity: .3;
   }
   to {
-    right: auto;
+    right: 0%;
     opacity: 1;
   }
 }
@@ -78,10 +82,43 @@
 @keyframes fromTop {
   from {
     top: -100px;
-    opacity: .3;
+    // opacity: .3;
   }
   to {
-    top: auto;
-    opacity: 1;
+    top: 0px;
+    // opacity: 1;
   }
 }
+
+// .fromTop-enter {
+//   opacity: 0.01;
+//   color: black;
+// }
+//
+// .fromTop-enter.fromTop-enter-active {
+//   opacity: 1;
+//   transition: all 500ms ease-in;
+//   color: blue;
+// }
+//
+// .fromTop-leave {
+//   opacity: 1;
+//   color: red;
+// }
+//
+// .fromTop-leave.fromTop-leave-active {
+//   opacity: 0.01;
+//   transition: all 300ms ease-in;
+//   color: purple;
+// }
+//
+// .fromTop-appear {
+//   opacity: 0.01;
+//   color: black;
+// }
+//
+// .fromTop-appear.fromTop-appear-active {
+//   opacity: 1;
+//   transition: all .5s ease-in;
+//   color: red;
+// }

@@ -3,6 +3,4 @@ node_modules
 mock
 img
 .sass-cache
-app.js
-package.json
-server.js
+dist
