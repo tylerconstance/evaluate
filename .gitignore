@@ -4,3 +4,4 @@ mock
 img
 .sass-cache
 dist
+public/css
