@@ -16,8 +16,8 @@ var activities = [
     'image': 'sample-1'
   },
   {
-    'name': 'Change up your coffee routine.',
-    'subtitle': 'Try a different brew method or order a new item.',
+    'name': 'Climb that goddamn moutain.',
+    'subtitle': 'Make Kerouac proud.',
     'image': 'sample-2'
   },
   {
