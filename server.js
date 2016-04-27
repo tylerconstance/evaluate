@@ -1,6 +1,10 @@
 'use strict';
 
 const Hapi = require('hapi');
+const mongoose = require('mongoose');
+
+require('./database');
+require('./seed');
 
 // Put this in a mock json file,
 // then ultimately a mongo db
