@@ -1,4 +1,4 @@
-console.log('In the app.js');
+// console.log('In the app.js');
 
 var ReactCSSTransitionGroup = React.addons.CSSTransitionGroup;
 
@@ -8,12 +8,12 @@ class App extends React.Component {
     this.state = {
       name: 'Hello',
       subtitle: 'do something cool.',
-      image: 'sample'
+      image: 'sample',
     };
   }
 
   successHandler(data) {
-    console.log('Success');
+    // console.log('Success');
     this.setState({ name: data.name }, function () {
     });
 
@@ -89,7 +89,7 @@ var Ajax = {
   xhr: null,
   request: function (url, method, data, success, failure) {
     if (!this.xhr) {
-      this.xhr = window.ActiveX ? new ActiveXObject('Microsoft.XMLHTTP'): new XMLHttpRequest();
+      this.xhr = window.ActiveX ? new ActiveXObject('Microsoft.XMLHTTP') : new XMLHttpRequest();
     }
 
     var self = this.xhr;

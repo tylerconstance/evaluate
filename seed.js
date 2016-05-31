@@ -22,17 +22,17 @@ var activities = [
     name: 'Pack a picnic for the park.',
     subtitle: 'Bonus points for bringing a picnic blanket.',
     image: 'sample-3',
-  }
+  },
 ];
 
 // For each seed item, if the name doesn't exist already, create a new item
 activities.forEach(function (activity, index) {
   Activity.find({ name: activity.name }, function (err, activities) {
     if (!err && !activities.length) {
-      // Todo.create({completed: false, name: todo});
+      // Activity.create({name: activity.name, subtitle: activity.subtitle, image: activity.image});
       console.log('I could create ' + activity.name);
     } else {
-      console.log("Activity at index " + index + " is " + activity);
+      console.log('Activity at index ' + index + ' is ' + activity);
       console.dir(activity.name);
     };
   });
