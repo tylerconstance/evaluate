@@ -1,7 +1,6 @@
 node_modules
 .DS_Store
 mock
-img
 .sass-cache
 dist
 public/css
