@@ -33,6 +33,18 @@ class App extends React.Component {
     );
   }
 
+  loadSpecificActivity(id) {
+    Ajax.request(
+      '/do/' + id,
+      'GET',
+      null,
+      this.successHandler.bind(this),
+      function () {
+        console.log('failed');
+      }
+    );
+  }
+
   componentDidMount() {
     var text = document.getElementsByClassName('activity__text-wrapper')[0];
     var image = document.getElementsByClassName('activity__image')[0];

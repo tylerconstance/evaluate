@@ -38,7 +38,7 @@
   &__image {
     display: block;
     position: relative;
-    height: 300px;
+    max-height: 300px;
     &.enter, &.update {
       animation: fromRight .5s;
     }

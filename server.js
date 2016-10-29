@@ -29,6 +29,11 @@ var activities = [
     subtitle: 'Bonus points for bringing a picnic blanket.',
     image: 'sample-3',
   },
+  {
+    name: 'Make a good dinner.',
+    subtitle: 'Like, a really good dinner.',
+    image: 'dinner',
+  },
 ];
 
 // Create a server with a host and port
@@ -53,6 +58,18 @@ server.register(require('inert'), (err) => {
         path: 'public',
       },
     },
+  });
+
+  server.route({
+    method: 'GET',
+    path: '/do/{id?}',
+    handler: function (request, reply) {
+        var index = request.params.id;
+        console.log("Index is " + index);
+        if (index) {
+          reply(activities[index]);
+        }
+      }
   });
 
   server.route({

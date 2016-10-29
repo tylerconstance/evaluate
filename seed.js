@@ -23,6 +23,11 @@ var activities = [
     subtitle: 'Bonus points for bringing a picnic blanket.',
     image: 'sample-3',
   },
+  {
+    name: 'Make a good dinner.',
+    subtitle: 'Like, a really good dinner.',
+    image: 'dinner',
+  },
 ];
 
 // For each seed item, if the name doesn't exist already, create a new item
