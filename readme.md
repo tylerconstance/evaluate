@@ -23,7 +23,7 @@ We're using webkit to handle the ES2015 stuff, so running ```node app.js``` won'
 ### Notes
 Items aren't currently stored in the database, but the database has been set up, and will print to the console when an entry would be created. This is kind of silly, but it's an intermediate step and will make it more obvious to me if anything breaks. This could definitely be handled better with proper unit testing.
 
-This was my first attempt at writing React, and I already realize I didn't add create enough components. That's the part of learning that's equally exciting and frustrating—by the time you get a test project working, you've learned enough to already be embarrassed by the code you just wrote.
+This was my first attempt at writing React, and I've already realized my components could be more modular. That's the part of learning that's equally exciting and frustrating—by the time you get a test project working, you've learned enough to already be embarrassed by the code you just wrote.
 
 ### Backlog
 I've got a few other items in my backlog to integrate into the project if I find some time. The top of the list is setting up an endpoint to share specific activities with others. It may be worth looking into dynamically appending the item number to a pseudo path, so hitting localhost:1337/:id will take the user to the specific item.
